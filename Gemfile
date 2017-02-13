@@ -27,6 +27,9 @@ gem 'jbuilder', '2.5.0'
 #Use Bootstrap for UI/Layout check version from time to time
 gem 'bootstrap-sass', '3.3.7'
 
+#Use fontawesome sass gem for adding Icons
+gem 'font-awesome-sass', '4.6.2'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
