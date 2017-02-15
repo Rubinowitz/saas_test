@@ -2,3 +2,23 @@
     <h1>Welcome from Home!</h1>
     <h3>A membership site as a test project.</h3>
 </div>
+
+<div class="container home-signup-links">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well">
+                <h2 class="text-center">Basic Memberships</h2>
+                <h4>Sign up for FREE and get basic access to the community.</h4>
+                <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+            </div>
+        </div>
+        <div class="col-md-6">
+           <div class="well">
+                <h2 class="text-center">Pro Memberships</h2>
+                <h4>Sign up for the pro account for only 10$/month to be pro.</h4>
+                <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+            </div>
+        </div>
+        
+    </div>
+</div>
